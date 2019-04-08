@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/icon"
+            android:title="Home" />
+
+    </group>
+
+    <item
+        android:title="Jornais">
+        <menu>
+            <group
+                android:id="@+id/menu_jornais"
+                android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_concurso"
+                    android:icon="@drawable/logotipo_mediarumo"
+                    android:title="Concurso Media Rumo" />
+
+                <item
+                    android:id="@+id/nav_mercado"
+                    android:icon="@drawable/mercado"
+                    android:title="Mercado" />
+
+                <item
+                    android:id="@+id/nav_vanguarda"
+                    android:icon="@drawable/v"
+                    android:title="Vanguarda" />
+                <item
+                    android:id="@+id/nav_rumo"
+                    android:icon="@drawable/rumo"
+                    android:title="Rumo" />
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Redes Sociais">
+        <menu>
+            <item
+                android:id="@+id/nav_instagram"
+                android:icon="@drawable/instagram"
+                android:title="Instagram" />
+            <item
+                android:id="@+id/nav_facebook"
+                android:icon="@drawable/facebook"
+                android:title="Facebook" />
+
+            <item
+                android:id="@+id/nav_linkedin"
+                android:icon="@drawable/linkedin"
+                android:title="LinkedIn" />
+
+            <item
+                android:id="@+id/nav_google"
+                android:icon="@drawable/google"
+                android:title="Google" />
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+        </menu>
+    </item>
+
+</menu>

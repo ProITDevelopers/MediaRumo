@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e4c65a</color>
+    <color name="colorPrimaryDark">#e4c65a</color>
+    <color name="colormedia">#ffe01b</color>
+    <color name="statuscolor">#6c5642</color>
+    <color name="colorAccent">#75c5f0</color>
+    <color name="colorGreen">#78ca28</color>
+    <color name="selected_product_count">#4d4d4d</color>
+    <color name="list_product_name">#121212</color>
+    <color name="list_products_price">#4d4d4d</color>
+    <color name="gradient_2">#3e3e3e</color>
+    <color name="bg_separator">#DA707070</color>
+    <color name="border_remove_item">#fc9898</color>
+    <color name="btn_remove_item">#fc2222</color>
+    <color name="red_dull">#FC5A5A</color>
+    <color name="bg_input_form">#FFEB6E</color>
+    <color name="hint_label">#4E4E4E</color>
+    <color name="grey">#5b5b5b</color>
+    <color name="lbl_secondary">#8d8d8d</color>
+
+    <color name="proitCyanBlue">#75c5f0</color>
+    <color name="proitNormalBlue">#0093dd</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="emailCheckgrey">#6E6E6E</color>
+    <color name="emailCheckorange">#FE9A2E</color>
+    <color name="emailCheckred">#FF0000</color>
+    <color name="emailCheckgreen">#33cdbb</color>
+
+    <color name="navDividercolor">#e1c65a</color>
+</resources>

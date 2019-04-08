@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/login"
+    tools:context=".SplashActivity">
+
+    <LinearLayout
+        android:id="@+id/logo_container"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="129dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logotipo_mediarumo2"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo_container"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginRight="41dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:background="@drawable/boxuser"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:padding="6dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/email_icn"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content">
+
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:src="@drawable/linha1"/>
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_email"
+                style="@style/TextLabel"
+                android:textColorHint="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/input_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_margin_half"
+                    android:background="@null"
+                    android:hint="@string/hint_email"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/white"
+                    android:paddingLeft="@dimen/activity_margin_half"
+                    android:paddingRight="@dimen/activity_margin_half"
+                    android:textCursorDrawable="@null"/>
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/boxuser"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/lock_icon"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content">
+
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:src="@drawable/linha1"/>
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_password"
+                style="@style/TextLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
+                app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/input_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_margin_half"
+                    android:background="@null"
+                    android:hint="@string/hint_password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/white"
+                    android:paddingLeft="@dimen/activity_margin_half"
+                    android:paddingRight="@dimen/activity_margin_half"
+                    android:textCursorDrawable="@null"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+
+
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            android:background="@drawable/bt_entrar"
+            android:textColor="@android:color/white"/>
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_width="140dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ou"
+            android:layout_height="18dp"/>
+
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/loginBtn"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"/>
+
+
+        <Button
+            android:id="@+id/fb"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/fb_icn"
+            />
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/loader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_30"
+            android:visibility="invisible"
+            app:indicatorColor="@color/colormedia"
+            app:indicatorName="BallPulseIndicator"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_create_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_30"
+        android:background="@null"
+
+        android:text="@string/lbl_create_account"
+        android:textAllCaps="false"
+        android:textColor="@color/white"/>
+
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/logo_container"-->
+        <!--android:layout_marginLeft="49dp"-->
+        <!--android:layout_marginTop="78dp"-->
+        <!--android:layout_marginRight="41dp"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<android.support.design.widget.TextInputLayout-->
+            <!--android:id="@+id/input_layout_email"-->
+            <!--style="@style/TextLabel"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/bg_input_layout_form"-->
+            <!--app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">-->
+
+            <!--<android.support.design.widget.TextInputEditText-->
+                <!--android:id="@+id/input_email"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="@dimen/activity_margin_half"-->
+                <!--android:background="@null"-->
+                <!--android:hint="@string/hint_email"-->
+                <!--android:inputType="textEmailAddress"-->
+                <!--android:textColor="@color/proitNormalBlue"-->
+                <!--android:paddingLeft="@dimen/activity_margin_half"-->
+                <!--android:paddingRight="@dimen/activity_margin_half"-->
+                <!--android:textCursorDrawable="@null"/>-->
+        <!--</android.support.design.widget.TextInputLayout>-->
+
+        <!--<android.support.design.widget.TextInputLayout-->
+            <!--android:id="@+id/input_layout_password"-->
+            <!--style="@style/TextLabel"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="@dimen/activity_margin"-->
+            <!--android:background="@drawable/bg_input_layout_form"-->
+            <!--app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">-->
+
+            <!--<android.support.design.widget.TextInputEditText-->
+                <!--android:id="@+id/input_password"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="@dimen/activity_margin_half"-->
+                <!--android:background="@null"-->
+                <!--android:hint="@string/hint_password"-->
+                <!--android:inputType="textPassword"-->
+                <!--android:textColor="@color/proitNormalBlue"-->
+                <!--android:paddingLeft="@dimen/activity_margin_half"-->
+                <!--android:paddingRight="@dimen/activity_margin_half"-->
+                <!--android:textCursorDrawable="@null"/>-->
+
+        <!--</android.support.design.widget.TextInputLayout>-->
+
+        <!--<android.support.v7.widget.AppCompatButton-->
+            <!--android:id="@+id/btn_login"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="@dimen/dimen_30"-->
+            <!--android:background="@android:color/black"-->
+            <!--android:text="@string/login"-->
+            <!--android:textColor="@android:color/white"/>-->
+
+        <!--<com.wang.avi.AVLoadingIndicatorView-->
+            <!--android:id="@+id/loader"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginTop="@dimen/dimen_30"-->
+            <!--android:visibility="invisible"-->
+            <!--app:indicatorColor="@android:color/black"-->
+            <!--app:indicatorName="BallPulseIndicator"/>-->
+    <!--</LinearLayout>-->
+
+    <!--<android.support.v7.widget.AppCompatButton-->
+        <!--android:id="@+id/btn_create_account"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginBottom="@dimen/dimen_30"-->
+        <!--android:background="@null"-->
+        <!--android:text="@string/lbl_create_account"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:textColor="@color/hint_label"/>-->
+
+
+
+</RelativeLayout>
